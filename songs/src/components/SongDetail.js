@@ -23,3 +23,5 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(SongDetail);
+
+//state is upated in Songlist, when the onClick function is used the connect function updates the state with the passed in song.
