@@ -16,6 +16,7 @@ class UserHeader extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
+  //prop passed in from PostList
   //does the user id equal to the current user
   return { user: state.users.find((user) => user.id === ownProps.userId) };
 };

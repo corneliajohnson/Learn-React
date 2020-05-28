@@ -3,7 +3,6 @@ import jsonPlaceholder from "../api/jsonPlaceholder";
 
 //Universal/popular solution for overfetching
 export const fetchPostAndUsers = () => async (dispatch, getState) => {
-  console.log("before fecthed post");
   await dispatch(fetchPosts()); //await: wait for fetchPosts
 
   //posts is updated on reducers/index.js
